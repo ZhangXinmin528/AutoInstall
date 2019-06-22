@@ -19,7 +19,7 @@ public class InstallerService extends AccessibilityService {
 
         AccessibilityNodeInfo installInfo = findViewByText("安装", true);
         AccessibilityNodeInfo openInfo = findViewByText("打开", true);
-        AccessibilityNodeInfo deleteInfo = findViewByText("删除", true);
+//        AccessibilityNodeInfo deleteInfo = findViewByText("删除", true);
 
         if (installInfo != null) {
             performViewClick(installInfo);
@@ -29,9 +29,9 @@ public class InstallerService extends AccessibilityService {
             performViewClick(openInfo);
         }
 
-        if (deleteInfo != null) {
+        /*if (deleteInfo != null) {
             performViewClick(deleteInfo);
-        }
+        }*/
     }
 
     @Override

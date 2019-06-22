@@ -2,9 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.zxm.libinstaller">
     <!--辅助功能-->
-    <uses-permission
+    <!--<uses-permission
         android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"
-        tools:ignore="ProtectedPermissions" />
+        tools:ignore="ProtectedPermissions" />-->
 
     <uses-permission android:name="android.permission.INTERNET" />
 

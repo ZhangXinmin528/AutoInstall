@@ -33,11 +33,8 @@ import java.io.OutputStream;
 public final class ApkInstaller {
 
     private static final String TAG = ApkInstaller.class.getSimpleName();
-
-    private Context mContext;
-
     private static ApkInstaller INSTANCE;
-
+    private Context mContext;
     private OnInstallStateListener mStateListener;
     private InstallState mInstallState;
 
@@ -47,15 +44,15 @@ public final class ApkInstaller {
         initParams();
     }
 
-    private void initParams() {
-        mInstallState = new InstallState();
-    }
-
     public static synchronized ApkInstaller getInstance(Context context) {
         if (INSTANCE == null) {
             INSTANCE = new ApkInstaller(context);
         }
         return INSTANCE;
+    }
+
+    private void initParams() {
+        mInstallState = new InstallState();
     }
 
     /**
